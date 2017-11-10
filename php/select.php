@@ -1,7 +1,9 @@
 <?php 
   include '../php/connection.php'; 
 
-$sql = "select File1, * from newsletterdata";
+$sql = "select * from newsletterdata where volume='' ";
+$result = mysql_query($link,$sql);
 
-while ($row=mysqli_fetch_assoc($result))
+$image = $row['File1'];
+echo "<img src='".$image."'>";
 ?>

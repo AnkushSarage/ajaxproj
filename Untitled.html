@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+	
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script>
+function showButtons () { $('#volume1, #volume2, #volume3').show(); }
+function HideButtons () { $('#volume1, #volume2, #volume3').hide(); }
+</script>
+<style type="text/css">
+#volume1, #volume2, #volume3 {
+display: none;
+font-size: 16px;
+background-color: #4CAF50;
+text-align: center;
+margin: 4px 2px;
+padding: 15px 32px;
+}
+
+</style>
+</head>
+<body>
+
+<button onclick="showButtons();">VOLUME</button> 
+<button onclick="HideButtons();"> <img src="Newsletterimages/" alt=""/>
+ISSUE</button><br><br>
+
+
+<input type="button" id="volume1" value="VOLUME1" onclick="" />
+<input type="button" id="volume2" value="VOLUME2" onclick="" />
+<input type="button" id="volume3" value="VOLUME3" onclick="" />
+
+</body>
+</html>

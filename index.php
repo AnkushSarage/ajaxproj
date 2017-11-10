@@ -2,6 +2,9 @@
 <html>
 <head>
 <style>
+    <script>
+    function HideButtons () { $('volume1, volume2, volume3').hide(); }
+    </script>
 .button {
     background-color: #4CAF50;
     border: none;
@@ -15,16 +18,35 @@
     cursor: pointer;
 }
 </style>
+
 </head>
 <body>
 
-<h2>News Letters</h2>
-<form method="post" enctype="multipart/form-data"
+<h1>News Letters</h1>
+<form  method="post" >
+ <input type="button" value="VOLUME" class="button" id="volume" onclick="myFunction()"> &nbsp;	&nbsp; &nbsp;	&nbsp;
+ <input type="button" value="ISSUE" class="button" id=issue  onclick="HideButtons()"><br> <br>
 
-<a href="index11.html" class="button" >ALL</a>	&nbsp;	&nbsp;	&nbsp;
-<a href="Untitledgg1.html" class="button">VOLUME</a> 	&nbsp;	&nbsp;	&nbsp;
-<a href="untitled-1.html" class="button">ISSUE</a>	&nbsp;	&nbsp;	&nbsp;
+<div id="myDIV" hidden="hidden">
+<input type="button" value="VOLUME 1" id="volume1" class="button">
+<input type="button" value="VOLUME 2" id="volume2" class="button">
+<input type="button" value="VOLUME 3" id="volume3" class="button">
+</div>
+<script>
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {    
+        x.style.display = "none";
+    }
+}
+</script>
+
 </form>
 
 </body>
 </html>
+
+
