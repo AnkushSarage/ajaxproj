@@ -24,13 +24,13 @@
 
 <h1>News Letters</h1>
 <form  method="post" >
- <input type="button" value="VOLUME" class="button" id="volume" onclick="myFunction()"> &nbsp;	&nbsp; &nbsp;	&nbsp;
- <input type="button" value="ISSUE" class="button" id=issue  onclick="HideButtons()"><br> <br>
+ <input type="button" value="VOLUME" class="button" onclick="myFunction();"> &nbsp;	&nbsp; &nbsp;	&nbsp;
+ <input type="button" value="ISSUE" class="button" id=issue  onclick="HideButtons();"><br> <br>
 
 <div id="myDIV" hidden="hidden">
-<input type="button" value="VOLUME 1" id="volume1" class="button">
-<input type="button" value="VOLUME 2" id="volume2" class="button">
-<input type="button" value="VOLUME 3" id="volume3" class="button">
+<input type="button" value="VOLUME_1" id="volume1" class="button">
+<input type="button" value="VOLUME_2" id="volume2" class="button">
+<input type="button" value="VOLUME_3" id="volume3" class="button">
 </div>
 <script>
 function myFunction() {
